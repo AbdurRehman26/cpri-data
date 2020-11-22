@@ -22,7 +22,8 @@
         "laravel/passport": "^10.0",
         "laravel/tinker": "^2.5",
         "maatwebsite/excel": "^3.1",
-        "yadakhov/insert-on-duplicate-key": "^1.2"
+        "yadakhov/insert-on-duplicate-key": "^1.2",
+        "kazmi/laravel-abstract-resource": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

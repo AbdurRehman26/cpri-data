@@ -36,9 +36,7 @@ class CreateSitesTable extends Migration {
 			$table->string('network_type')->nullable();
 			$table->string('prime_no_prime')->nullable();
 			$table->string('indoor_outdoor')->nullable();
-			$table->string('general_status')->nullable();
 			$table->string('genset_status')->nullable();
-			$table->string('omo_colcolation')->nullable();
 			$table->string('omo_colocation')->nullable();
 			$table->string('omo_id')->nullable();
 			$table->string('collocated_status')->nullable();

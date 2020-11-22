@@ -166,7 +166,11 @@ return [
          * Package Service Providers...
          */
          Laravel\Passport\PassportServiceProvider::class,
-
+         Kazmi\Providers\ResourceCommandServiceProvider::class,
+         App\Providers\SiteRepositoryServiceProvider::class,
+         App\Providers\MBURepositoryServiceProvider::class,
+         App\Providers\RegionRepositoryServiceProvider::class,
+         App\Providers\SubRegionRepositoryServiceProvider::class,
         /*
          * Application Service Providers...
          */

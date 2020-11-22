@@ -10,7 +10,7 @@ use Maatwebsite\Excel\Concerns\WithChunkReading;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Row;
 
-class SitesImport implements OnEachRow, WithStartRow, WithChunkReading
+class CPRIImport implements OnEachRow, WithStartRow, WithChunkReading
 {
 
         /**
@@ -22,25 +22,7 @@ class SitesImport implements OnEachRow, WithStartRow, WithChunkReading
     public function onRow(Row $row)
     {
         $value = $row->toArray();
-
-
-        $vendorColumn = str_replace(' ', '', $value[4]);
-        $regionColumn = str_replace(' ', '', $value[10]);
-        $subRegionColumn = str_replace(' ', '', $value[11]);
-        $commRegionColumn = str_replace(' ', '', $value[12]);
-        $mbuColumn = str_replace(' ', '', $value[16]);
-        $rbuColumn = str_replace(' ', '', $value[17]);
-
-        $vendor_id = app("MBURepository")->findOrCreate(['name' => $vendorColumn]);
-        $region_id = app("RegionRepository")->findOrCreate(['name' => $regionColumn]);
-        $sub_region_id = app("SubRegionRepository")->findOrCreate(['name' => $subRegionColumn]);
-        $comm_region_id = app("SubRegionRepository")->findOrCreate(['name' => $commRegionColumn]);
-        $mbu_id = app("MBURepository")->findOrCreate(['name' => $mbuColumn]);
-        $rbu_id = app("RegionRepository")->findOrCreate(['name' => $rbuColumn]);
-
-        dd($vendor_id);
-
-        dd($regionColumn, $subRegionColumn, $commRegionColumn, $mbuColumn, $rbuColumn);
+        dd($value);
         /*
         * Adding up the product in its table and ignoring if it
         * already exists, Also caching it for further use

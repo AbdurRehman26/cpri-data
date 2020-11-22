@@ -107962,8 +107962,8 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utils_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/utils/auth */ "./resources/js/utils/auth.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_2__);
 
 
  // Create axios instance
@@ -107997,7 +107997,7 @@ service.interceptors.response.use(function (response) {
 
   if (response.data.message) {
     var message = response.data.message ? response.data.message : "Added Successfully";
-    sweetalert2__WEBPACK_IMPORTED_MODULE_3___default.a.fire({
+    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire({
       title: 'Success!',
       text: message,
       icon: 'success',
@@ -108017,7 +108017,7 @@ service.interceptors.response.use(function (response) {
       errorValue = message[i];
     }
 
-    sweetalert2__WEBPACK_IMPORTED_MODULE_3___default.a.fire({
+    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire({
       title: 'Error!',
       text: errorValue,
       icon: 'error',
@@ -108027,7 +108027,7 @@ service.interceptors.response.use(function (response) {
     message = error.response.data.error;
 
     if (message == 'invalid_grant') {
-      sweetalert2__WEBPACK_IMPORTED_MODULE_3___default.a.fire({
+      sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire({
         title: 'Error!',
         text: "Invalid username or password",
         icon: 'error',
@@ -110465,8 +110465,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/sites-data/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/sites-data/resources/css/app.css */"./resources/css/app.css");
+__webpack_require__(/*! /var/www/cpri-data/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/cpri-data/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })

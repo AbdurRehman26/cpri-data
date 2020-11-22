@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e01ec32ee4d7a25ef38240d72c6c358e",
+    "content-hash": "af86a51de6c7229261ba0d7027278853",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1009,6 +1009,103 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.7.0"
             },
             "time": "2020-09-30T07:37:11+00:00"
+        },
+        {
+            "name": "hashids/hashids",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vinkla/hashids.git",
+                "reference": "6bd7ceffb2ccddef6cd64e88f1717f97d131cc3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vinkla/hashids/zipball/6bd7ceffb2ccddef6cd64e88f1717f97d131cc3c",
+                "reference": "6bd7ceffb2ccddef6cd64e88f1717f97d131cc3c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hashids\\": "lib/Hashids/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Akimov",
+                    "email": "ivan@barreleye.com",
+                    "homepage": "https://twitter.com/IvanAkimov"
+                }
+            ],
+            "description": "Generate short, unique, non-sequential ids (like YouTube and Bitly) from numbers.",
+            "homepage": "http://hashids.org/php",
+            "keywords": [
+                "bitly",
+                "decode",
+                "encode",
+                "hash",
+                "hashid",
+                "hashids",
+                "ids",
+                "obfuscate",
+                "youtube"
+            ],
+            "support": {
+                "issues": "https://github.com/vinkla/hashids/issues",
+                "source": "https://github.com/vinkla/hashids/tree/1.0.6"
+            },
+            "time": "2016-01-21T04:26:38+00:00"
+        },
+        {
+            "name": "kazmi/laravel-abstract-resource",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AbdurRehman26/laravel-abstract-resource.git",
+                "reference": "e3cdd2571e96f4de2e8b961019749a573c537d63"
+            },
+            "require": {
+                "hashids/hashids": "^1.0",
+                "kazmi/laravel-abstract-resource": "dev-master",
+                "laravel/framework": ">=5.0",
+                "php": ">=5.6.4"
+            },
+            "default-branch": true,
+            "type": "composerr-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Kazmi\\": "src/"
+                },
+                "files": [
+                    "src/Support/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT License"
+            ],
+            "authors": [
+                {
+                    "name": "Usaama effendi / Abdur Rehman (Collaborator)",
+                    "email": "sydabdrehman@gmail.com"
+                }
+            ],
+            "description": "Abstract Repository for Repository Pattern - Laravel",
+            "time": "2020-11-21T05:51:28+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8619,7 +8716,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "kazmi/laravel-abstract-resource": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

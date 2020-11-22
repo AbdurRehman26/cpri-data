@@ -17,3 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::resource('site', 'Api\V1\SiteController')->except([
+             'edit'
+        ]);Route::resource('site', 'Api\V1\SiteController')->except([
+             'edit'
+        ]);Route::resource('region', 'Api\V1\RegionController')->except([
+             'edit'
+        ]);Route::resource('subregion', 'Api\V1\SubRegionController')->except([
+             'edit'
+        ]);Route::resource('mbu', 'Api\V1\MBUController')->except([
+             'edit'
+        ]);
